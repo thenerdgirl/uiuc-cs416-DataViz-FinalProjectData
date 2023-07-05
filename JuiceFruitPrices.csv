@@ -1,12 +1,12 @@
 Fruit,RetailPrice,Yield
-Apples, ready-to-drink,0.7804,1
-Apples, frozen concentrate,0.5853,1
-Grapefruit, ready-to-drink,1.0415,1
-Grapes, ready-to-drink,0.9215,1
-Grapes, frozen concentrate,0.7119,1
-Oranges, ready-to-drink,0.9842,1
-Oranges, frozen concentrate,0.769,1
-Pineapple, ready-to-drink,1.0288,1
-Pineapple, frozen concentrate,0.6973,1
-Plum (prune), ready-to-drink,1.5522,1
-Pomegranate, ready-to-drink,3.122,1
+"Apples, ready-to-drink",0.7804,1
+"Apples, frozen concentrate",0.5853,1
+"Grapefruit, ready-to-drink",1.0415,1
+"Grapes, ready-to-drink",0.9215,1
+"Grapes, frozen concentrate",0.7119,1
+"Oranges, ready-to-drink",0.9842,1
+"Oranges, frozen concentrate",0.769,1
+"Pineapple, ready-to-drink",1.0288,1
+"Pineapple, frozen concentrate",0.6973,1
+"Plum (prune), ready-to-drink",1.5522,1
+"Pomegranate, ready-to-drink",3.122,1
