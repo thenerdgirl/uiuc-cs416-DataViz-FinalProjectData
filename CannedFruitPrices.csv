@@ -1,13 +1,13 @@
-Fruit,RetailPrice
-Apples, applesauce,1.066
-Apricots, packed in juice,1.6905
-Apricots, packed in syrup or water,2.06
-Cherries, packed in syrup or water,4.5257
-Fruit cocktail, packed in juice,1.7198
-Fruit cocktail, packed in syrup or water,1.5932
-Peaches, packed in juice,2.0237
-Peaches, packed in syrup or water,1.8117
-Pears, packed in juice,1.9546
-Pears, packed in syrup or water,1.897
-Pineapple, packed in juice,1.4344
-Pineapple, packed in syrup or water,1.4067
+Fruit,RetailPrice,Yield
+Apples, applesauce,1.066,1
+Apricots, packed in juice,1.6905,1
+Apricots, packed in syrup or water,2.06,0.65
+Cherries, packed in syrup or water,4.5257,0.65
+Fruit cocktail, packed in juice,1.7198,1
+Fruit cocktail, packed in syrup or water,1.5932,0.65
+Peaches, packed in juice,2.0237,1
+Peaches, packed in syrup or water,1.8117,0.65
+Pears, packed in juice,1.9546,1
+Pears, packed in syrup or water,1.897,0.65
+Pineapple, packed in juice,1.4344,1
+Pineapple, packed in syrup or water,1.4067,0.65

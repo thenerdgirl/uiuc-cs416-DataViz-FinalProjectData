@@ -5,6 +5,7 @@ import csv
 Fruit = 0
 Form = 1
 RetailPrice = 2
+Yield = 4
 
 # Set up seasons
 spring = ["Apples","Apricots","Bananas","Kiwi","Nectarines","Pineapple","Strawberries"]
@@ -28,7 +29,12 @@ canned_fruit = {}
 juice_fruit = {}
 dried_fruit = {}
 frozen_fruit = {}
-# fresh canned juice dried frozen
+
+fresh_fruit_yield = {} # fruit : retail price
+canned_fruit_yield = {}
+juice_fruit_yield = {}
+dried_fruit_yield = {}
+frozen_fruit_yield = {}
 
 with open('FruitPrices2020.csv', newline='') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
@@ -53,14 +59,19 @@ with open('FruitPrices2020.csv', newline='') as csv_file:
         if line_count != 0:
             if row[Form] == "Fresh":
                 fresh_fruit[row[Fruit]] = row[RetailPrice]
+                fresh_fruit_yield[row[Fruit]] = row[Yield]
             if row[Form] ==  "Canned":
                 canned_fruit[row[Fruit]] = row[RetailPrice]
+                canned_fruit_yield[row[Fruit]] = row[Yield]
             if row[Form] ==  "Juice":
                 juice_fruit[row[Fruit]] = row[RetailPrice]
+                juice_fruit_yield[row[Fruit]] = row[Yield]
             if row[Form] ==  "Dried":
                 dried_fruit[row[Fruit]] = row[RetailPrice]
+                dried_fruit_yield[row[Fruit]] = row[Yield]
             if row[Form] ==  "Frozen":
                 frozen_fruit[row[Fruit]] = row[RetailPrice]
+                frozen_fruit_yield[row[Fruit]] = row[Yield]
 
         line_count += 1
     print(f'Procesed {line_count} lines')
@@ -78,22 +89,27 @@ with open('FruitPrices2020.csv', newline='') as csv_file:
         f.write("Fall,"+ str(fall_avg) +"\n")
         f.write("Winter,"+ str(winter_avg) +"\n")
     
+    with open('FreshFruitPrices.csv', mode='wt') as f:
+        f.write("Fruit,RetailPrice,Yield\n")
+        for ff in fresh_fruit:
+            f.write(ff+","+fresh_fruit[ff]+","+fresh_fruit_yield[ff]+"\n")
+
     with open('CannedFruitPrices.csv', mode='wt') as f:
-        f.write("Fruit,RetailPrice\n")
+        f.write("Fruit,RetailPrice,Yield\n")
         for ff in canned_fruit:
-            f.write(ff+","+canned_fruit[ff]+"\n")
+            f.write(ff+","+canned_fruit[ff]+","+canned_fruit_yield[ff]+"\n")
     
     with open('JuiceFruitPrices.csv', mode='wt') as f:
-        f.write("Fruit,RetailPrice\n")
+        f.write("Fruit,RetailPrice,Yield\n")
         for ff in juice_fruit:
-            f.write(ff+","+juice_fruit[ff]+"\n")
+            f.write(ff+","+juice_fruit[ff]+","+juice_fruit_yield[ff]+"\n")
 
     with open('DriedFruitPrices.csv', mode='wt') as f:
-        f.write("Fruit,RetailPrice\n")
+        f.write("Fruit,RetailPrice,Yield\n")
         for ff in dried_fruit:
-            f.write(ff+","+dried_fruit[ff]+"\n")
+            f.write(ff+","+dried_fruit[ff]+","+dried_fruit_yield[ff]+"\n")
 
     with open('FrozenFruitPrices.csv', mode='wt') as f:
-        f.write("Fruit,RetailPrice\n")
+        f.write("Fruit,RetailPrice,Yield\n")
         for ff in frozen_fruit:
-            f.write(ff+","+frozen_fruit[ff]+"\n")
+            f.write(ff+","+frozen_fruit[ff]+","+frozen_fruit_yield[ff]+"\n")

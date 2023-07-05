@@ -1,10 +1,10 @@
-Fruit,RetailPrice
-Apricots,6.6188
-Cranberries,4.6513
-Dates,5.5713
-Figs,6.8371
-Grapes (raisins),3.7801
-Mangoes,10.5527
-Papaya,5.5089
-Pineapple,6.6492
-Plum (prunes),5.7042
+Fruit,RetailPrice,Yield
+Apricots,6.6188,1
+Cranberries,4.6513,1
+Dates,5.5713,1
+Figs,6.8371,0.96
+Grapes (raisins),3.7801,1
+Mangoes,10.5527,1
+Papaya,5.5089,1
+Pineapple,6.6492,1
+Plum (prunes),5.7042,1

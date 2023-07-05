@@ -1,7 +1,7 @@
-Fruit,RetailPrice
-Berries, mixed,3.5585
-Blackberries,3.6362
-Blueberries,3.3898
-Peaches,3.3867
-Raspberries,4.1877
-Strawberries,2.8189
+Fruit,RetailPrice,Yield
+Berries, mixed,3.5585,1
+Blackberries,3.6362,1
+Blueberries,3.3898,1
+Peaches,3.3867,1
+Raspberries,4.1877,1
+Strawberries,2.8189,1
